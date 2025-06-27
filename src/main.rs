@@ -16,5 +16,6 @@ fn main() {
     //Adding from another bit--this is me.
     let x=5;
     let y=10;
-    println!("x is {x} and y+2 is {}",y+2)   
+    println!("x is {x} and y+2 is {}",y+2);
+    println!("First is {} and second it {}",1,"orange");   
 }
