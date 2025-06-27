@@ -13,4 +13,8 @@ fn main() {
         .expect("Failed to read line");
 
     println!("You guessed: {guess}");
+    //Adding from another bit--this is me.
+    let x=5;
+    let y=10;
+    println!("x is {x} and y+2 is {}",y+2)   
 }
