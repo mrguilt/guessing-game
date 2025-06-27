@@ -3,3 +3,4 @@ Working through [Chapter 2](https://doc.rust-lang.org/book/ch02-00-guessing-game
 * **2025-06-27 15:23** Initial, Listing 2-1.
 * **15:28** Adding a mini example of my own.
 * **15:38** Moving on to the next listing, 2-3 (adding a random number) and through listing 2-7 (breaking the loop)
+* **16:00** Added Listing 2-8, and commented out my 15:28 experiment

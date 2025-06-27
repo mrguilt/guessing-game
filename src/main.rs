@@ -21,8 +21,12 @@ fn main() {
 
     println!("You guessed: {guess}");
 
-    let guess: u32 = guess.trim().parse().expect("Please type a number!"); //Listing 2-5
+//    let guess: u32 = guess.trim().parse().expect("Please type a number!"); //Listing 2-5
 
+    let guess: u32 = match guess.trim().parse() {   //Listing 2-8
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
     //Listing 2-4
     match guess.cmp(&secret_number) { 
@@ -35,9 +39,9 @@ fn main() {
     }
 
     }  //Listing 2-6  
-    //Adding from another bit--this is me.
-   let x=5;
-   let y=10;
-   println!("x is {x} and y+2 is {}",y+2);
-   println!("First is {} and second it {}",1,"orange");   
+   //Adding from another bit--this is me. Then removed when adding Listing 2-8, just to lock it all down. 
+   //let x=5;
+   //let y=10;
+   //println!("x is {x} and y+2 is {}",y+2);
+   //println!("First is {} and second it {}",1,"orange");   
 }
